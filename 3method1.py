@@ -1,15 +1,12 @@
 # Write the function between the START and END tags
 # START
 def SortWordsAlphabetically(tests):
-    words = tests.lower()
-    wording = words.split("-")
-    wording.sort()  
-    for word in wording:
-        
-        print(word)
-#aphend the list for everything besides the last one
-    
-
+        jo = "-"  #To put the "-" back in later
+        tests = tests.lower()
+        word = tests.split("-")
+        tests = word.sort()
+        tests = jo.join(word)
+        return tests
 
 
 
